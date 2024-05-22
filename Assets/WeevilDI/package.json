@@ -1,0 +1,8 @@
+{
+    "name": "com.hopweevil.weevildi",
+    "displayName": "WeevilDi",
+    "version": "1.0.0",
+    "unity": "2019.3",
+    "description": "Simple and fast DI (Dependency Injection) for Unity",
+    "keywords": ["DI", "Dependency Injection", "DI Container"]
+  }
