@@ -6,6 +6,7 @@ using WeevilDI.Configuration;
 
 namespace WeevilDI.Core
 {
+    [DefaultExecutionOrder(-1)]
     public class DIContainer : MonoBehaviour
     {
         [SerializeField] private DIConfiguration _configuration;

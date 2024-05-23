@@ -41,15 +41,15 @@ namespace WeevilDI.Injectors
             }
         }
 
-        private InjectConstructorInfo GetInjectConstructor(object target)
+        private InjectConstructorInfo GetInjectConstructor(Type type)
         {
             if (_configuration.CacheConstructors)
             {
-                return ConstructorCache.Get(target.GetType());
+                return ConstructorCache.Get(type);
             }
             else
             {
-                return InjectableConstructorProvider.Provide(target.GetType());
+                return InjectableConstructorProvider.Provide(type);
             }
         }
 
